@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+ 
+    <button class="toggle-btn" id="toggle-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>Admin Panel</h2>
+        </div>
+        <nav>
+            <ul>
+                <li  class="active"> <a style="text-decoration: none;color: black;"   href="index.html"> <i class="fas fa-home"></i>Home</a></li>
+                <li  ><a style="text-decoration: none;color: black;"   href="drivers.html"> <i class="fas fa-car"></i>Drivers</a> </li>
+                <li > <a style="text-decoration: none;color: black;"   href="appointments.html"><i class="fas fa-calendar-check"></i>Appointments</a>  </li>
+                <li > <a style="text-decoration: none;color: black;"   href="Allusers.html"><i class="fas fa-users"></i>All Users</a></li>
+
+            </ul>
+        </nav>
+    </aside>
+
+
+    <main class="content">
+  
+        <header class="header">
+            <div class="appointments-header">
+                <h3 style="font-weight: bolder;">Home</h3>
+            </div>
+            <div class="admin-info">
+                <i class="fas fa-bell"></i>
+                <span>Admin</span>
+                <img src="cab.jpg">
+            </div>
+        </header>
+
+        <div class="overview-section">
+            <h2>Dashboard Overview</h2>
+            <div class="cards-container">
+          
+                <div class="card">
+                    <h3>Total Users</h3>
+                    <p class="count">1,200</p>
+                    <p class="description">Registered users</p>
+                    <button class="view-all"><a href="Allusers.html">View All</a> </button>
+                </div>
+
+          
+                <div class="card">
+                    <h3>Total Drivers</h3>
+                    <p class="count">150</p>
+                    <p class="description">Registered drivers</p>
+                    <button class="view-all"> <a href="drivers.html">View All</a></button>
+                </div>
+
+       
+                <div class="card">
+                    <h3>Total Appointments</h3>
+                    <p class="count">500</p>
+                    <p class="description">Appointments booked</p>
+                    <button class="view-all"><a href="appointments.html">View All</a></button>
+                </div>
+
+           
+               
+            </div>
+
+            
+           
+
+       
+            <div class="table-container">
+                <h3>Recent Registrations</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Registration Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>101</td>
+                            <td>Michael Brown</td>
+                            <td>michael@example.com</td>
+                            <td>Driver</td><td>2023-09-20</td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>Sarah Johnson</td>
+                            <td>sarah@example.com</td>
+                            <td>Appointment Seeker</td>
+                            <td>2023-08-15</td></tr>
+                      
+                    </tbody>
+                </table>
+                <button class="view-all"><a href="Allusers.html">View All Registered Users</a> </button>
+            </div>
+
+       
+            <div class="table-container">
+                <h3>Recent Appointments</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Driver ID</th>
+                            <th>Driver Name</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                            <th>License Number</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>ABC</td>
+                            <td>abcn@gmail.com</td>
+                            <td>0311257844447</td>
+                            <td>LMN23456</td>
+                            <td>Active</td>
+                            <td>
+                                <button class="check"><i class="fas fa-check"></i></button>
+                                <button class="delete"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td>2</td>
+                            <td>ABC</td>
+                            <td>abcn@gmail.com</td>
+                            <td>0311257844447</td>
+                            <td>LMN23456</td>
+                            <td>Active</td>
+                            <td>
+                                <button class="check"><i class="fas fa-check"></i></button>
+                                <button class="delete"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                
+                   
+                    </tbody>
+                </table>
+                <button class="view-all"><a href="appointments.html">View All Appointments</a> </button>
+            </div>
+
+     
+            <div class="table-container">
+                <h3>Active Drivers</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Driver ID</th>
+                            <th>Name</th>
+                            <th>Vehicle Details</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>John Doe</td>
+                            <td>Car - ABC123</td>
+                            <td>Available</td>
+                            <td>
+                                <button class="remove-btn"><i class="fas fa-trash"></i> Remove</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>Jane Smith</td>
+                            <td>Bike - XYZ456</td>
+                            <td>Busy</td>
+                            <td>
+                                <button class="remove-btn"><i class="fas fa-trash"></i> Remove</button>
+                            </td>
+                        </tr>
+                        <tr>
+                      
+                    </tbody>
+                </table>
+                <button class="view-all"><a href="drivers.html">View All Drivers</a> </button>
+            </div>
+        </div>
+    </main>
+
+ 
+    <script src="script.js"></script>
+   
+</body>
+</html>

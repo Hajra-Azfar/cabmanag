@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <button class="toggle-btn" id="toggle-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+    
+   
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>Admin Panel</h2>
+        </div>
+        <nav>
+            <ul>
+                <li > <a style="text-decoration: none;color: black;"   href="index.html"> <i class="fas fa-home"></i>Home</a></li>
+                <li  ><a style="text-decoration: none;color: black;"   href="drivers.html"> <i class="fas fa-car"></i>Drivers</a> </li>
+                <li > <a style="text-decoration: none;color: black;"   href="appointments.html"><i class="fas fa-calendar-check"></i>Appointments</a>  </li>
+                <li class="active"> <a style="text-decoration: none;color: black;"   href="Allusers.html"><i class="fas fa-users"></i>All Users</a></li>
+
+            </ul>
+        </nav>
+    </aside>
+
+  
+    <main class="content">
+
+        <header class="header">
+          
+            <div class="appointments-header">
+                <h3 style="font-weight: bolder;">All Registed Users</h3>
+            </div>
+            <div class="admin-info">
+                
+                <i class="fas fa-bell"></i>
+                <span>Admin</span>
+                <img src="cab.jpg" >
+            </div>
+          
+        </header>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Registration Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>abc</td><td>abc@gmail.com</td><td>Driver</td><td>15-20-2025</td></tr>
+                    <tr><td>1</td><td>abc</td><td>abc@gmail.com</td><td>Appointment seeker</td><td>15-20-2025</td></tr>
+                    <tr><td>1</td><td>abc</td><td>abc@gmail.com</td><td>Driver</td><td>15-20-2025</td></tr>
+                    <tr><td>1</td><td>abc</td><td>abc@gmail.com</td><td>Appointment seeker</td><td>15-20-2025</td></tr>
+                    <tr><td>1</td><td>abc</td><td>abc@gmail.com</td><td>Driver</td><td>15-20-2025</td></tr>
+                    <tr><td>1</td><td>abc</td><td>abc@gmail.com</td><td>Appointment seeker</td><td>15-20-2025</td></tr>
+                    <tr><td>1</td><td>abc</td><td>abc@gmail.com</td><td>Driver</td><td>15-20-2025</td></tr>
+                    <tr><td>1</td><td>abc</td><td>abc@gmail.com</td><td>Appointment seeker</td><td>15-20-2025</td></tr>
+                    <tr><td>1</td><td>abc</td><td>abc@gmail.com</td><td>Driver</td><td>15-20-2025</td></tr>
+                    <tr><td>1</td><td>abc</td><td>abc@gmail.com</td><td>Driver</td><td>15-20-2025</td></tr>
+                    <tr><td>1</td><td>abc</td><td>abc@gmail.com</td><td>Driver</td><td>15-20-2025</td></tr>
+                    <tr><td>1</td><td>abc</td><td>abc@gmail.com</td><td>Driver</td><td>15-20-2025</td></tr>
+                </tbody>
+            </table>
+            
+        
+        </div>
+    </main>
+    
+<script src="script.js"></script>
+</body>
+</html>
